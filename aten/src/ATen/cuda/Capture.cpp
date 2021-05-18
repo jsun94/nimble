@@ -30,6 +30,8 @@ POSSIBILITY OF SUCH DAMAGE.
 #include <ATen/cuda/Capture.h>
 #include <ATen/cuda/AutoStream.h>
 
+#include <iostream>
+
 namespace at {
 namespace cuda {
 
@@ -87,6 +89,7 @@ void endCUDAStreamCapture(CUDAStream stream, Graph& graph) {
       "Please check errors occured between the cons- and des- truction of this guard.");
 
   if (autostream::AutoStreamMode::is_enabled()) {
+    std::cout << "print capture.cpp" << std::endl;
     autostream::AutoStreamMode::set_enabled(false);
     autostream::wait_all_streams();
     autostream::clear_capture_streams();
