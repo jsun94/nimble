@@ -343,7 +343,6 @@ filegroup(
         "aten/src/ATen/cuda/AutoStream.cpp",
         "aten/src/ATen/cuda/Capture.cpp",
         "aten/src/ATen/cuda/Graph.cpp",
-        "aten/src/ATen/cuda/check.cpp",
         "aten/src/ATen/cuda/detail/CUDAHooks.cpp",
         "aten/src/ATen/cudnn/AutocastRNN.cpp",
         "aten/src/ATen/cudnn/Descriptors.cpp",
